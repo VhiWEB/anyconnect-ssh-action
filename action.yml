@@ -24,6 +24,9 @@ inputs:
   vpn_user:
     description: 'VPN User'
     required: true
+  vpn_password:
+    description: 'VPN Password'
+    required: true
   vpn_group:
     description: 'VPN Group'
     required: false
