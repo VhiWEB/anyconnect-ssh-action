@@ -7,4 +7,4 @@
 echo $SSH_PRIVATE_KEY > ~/.ssh/id_rsa
 
 # Execute SSH Command
-ssh -o 'StrictHostKeyChecking no' $INPUT_SSH_USER@$INPUT_SSH_HOST -p $INPUT_SSH_PORT -c $INPUT_SSH_COMMAND
+ssh -o 'StrictHostKeyChecking no' $INPUT_SSH_USER@$INPUT_SSH_HOST -p $INPUT_SSH_PORT $INPUT_SSH_COMMAND
