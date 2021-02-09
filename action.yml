@@ -1,0 +1,32 @@
+name: 'SSH Command via AnyConnect VPN'
+author: 'VhiWEB'
+description: ''
+inputs:
+  ssh_host:
+    description: 'SSH Host'
+    required: true
+  ssh_user:
+    description: 'SSH User'
+    required: true
+  ssh_port:
+    description: 'SSH Port'
+    required: false
+    default: '22'
+  privateKey:
+    description: 'File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)'
+    required: false
+  ssh_command:
+    description: 'Command'
+    required: true
+  vpn_host:
+    description: 'VPN Host'
+    required: true
+  vpn_user:
+    description: 'VPN User'
+    required: true
+  vpn_group:
+    description: 'VPN Group'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
