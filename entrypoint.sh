@@ -5,6 +5,7 @@
 
 # Prepare private-key
 echo $SSH_PRIVATE_KEY > ssh-private-key
+chmod 400 ssh-private-key
 
 # Execute SSH Command
 ssh -o 'StrictHostKeyChecking no' -i ssh-private-key -p $INPUT_SSH_PORT $INPUT_SSH_USER@$INPUT_SSH_HOST $INPUT_SSH_COMMAND
