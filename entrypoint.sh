@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Connect to VPN
-( echo "yes"; echo $INPUT_VPN_PASSWORD ) | openconnect $INPUT_VPN_HOST --user=$INPUT_VPN_USER --authgroup=$INPUT_VPN_GROUP
+( echo "yes"; echo $INPUT_VPN_PASSWORD ) | openconnect $INPUT_VPN_HOST --user=$INPUT_VPN_USER --authgroup=$INPUT_VPN_GROUP -b
 
 # Prepare private-key
 echo $INPUT_SSH_PRIVATE_KEY > ssh-private-key
