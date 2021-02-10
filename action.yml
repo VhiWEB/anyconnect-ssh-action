@@ -33,3 +33,5 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - cap-add=NET_ADMIN
