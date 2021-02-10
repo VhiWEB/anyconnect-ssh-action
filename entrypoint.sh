@@ -4,7 +4,7 @@
 ( echo "yes"; echo $INPUT_VPN_PASSWORD ) | openconnect $INPUT_VPN_HOST --user=$INPUT_VPN_USER --authgroup=$INPUT_VPN_GROUP
 
 # Prepare private-key
-echo $SSH_PRIVATE_KEY > ssh-private-key
+echo $INPUT_SSH_PRIVATE_KEY > ssh-private-key
 chmod 400 ssh-private-key
 
 # Execute SSH Command

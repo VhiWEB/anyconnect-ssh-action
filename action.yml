@@ -12,7 +12,7 @@ inputs:
     description: 'SSH Port'
     required: false
     default: '22'
-  privateKey:
+  ssh_private_key:
     description: 'File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)'
     required: false
   ssh_command:
